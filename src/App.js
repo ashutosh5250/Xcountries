@@ -18,7 +18,7 @@ function App() {
       let response = await axios.get("https://restcountries.com/v3.1/all");
       setCountries(response.data);
     } catch (e) {
-      console.log("Error", e);
+      console.log(e);
     } finally {
       setLoading(false);
     }
